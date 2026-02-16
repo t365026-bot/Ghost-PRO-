@@ -1,0 +1,23 @@
+{
+  "project_info": {
+    "project_number": "332879455079",
+    "project_id": "ghost-pro-5aa22",
+    "storage_bucket": "ghost-pro-5aa22.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332879455079:android:15c36642c62d13e0dd05c2",
+        "android_client_info": {
+          "package_name": "org.ghost.ghost_messenger_secure"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbiRCuR9egtHKg0FNzzBdL9dNqPqpPLNk"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}
