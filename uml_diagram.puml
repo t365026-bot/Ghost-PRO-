@@ -1,0 +1,35 @@
+@startuml
+' Ghost PRO Messenger - GitHub Actions Build Pipeline
+
+package "GitHub Repository" {
+    component "Source Code" as source {
+        file "main.py"
+        file "requirements.txt"
+        file "google-services.json"
+        file "icon.png"
+        folder "assets"
+    }
+}
+
+package "GitHub Actions Workflow" {
+    component "Build Pipeline" as pipeline {
+        component "Step 1: Checkout" as checkout
+        component "Step 2: Setup Python" as python
+        component "Step 3: Install Dependencies" as deps
+        component "Step 4: Setup Android SDK" as android
+        component "Step 5: Build APK" as build
+        component "Step 6: Sign APK" as sign
+        component "Step 7: Upload Artifact" as upload
+    }
+}
+
+package "Build Process" {
+    component "Flet Build System" as flet {
+        component "Compile Python to bytecode" as compile
+        component "Package with dependencies" as package
+        component "Create Android resources" as resources
+        component "Generate APK" as apk
+    }
+    
+    component "Android SDK" as sdk {
+        component "aapt"
